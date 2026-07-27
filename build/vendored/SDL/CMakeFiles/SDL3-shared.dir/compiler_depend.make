@@ -4289,10 +4289,21 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/hidapi/SDL_hidapi.c.o: vendored/SDL/
   /home/david/dev/hellosdl/vendored/SDL/src/core/linux/SDL_udev.h \
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/SDL_joystick_c.h \
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/usb_ids.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/misc/SDL_libusb.h \
   /home/david/dev/hellosdl/vendored/SDL/src/hidapi/SDL_hidapi.c \
   /home/david/dev/hellosdl/vendored/SDL/src/hidapi/SDL_hidapi_c.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/hidapi/SDL_hidapi_libusb.h \
   /home/david/dev/hellosdl/vendored/SDL/src/hidapi/SDL_hidapi_linux.h \
   /home/david/dev/hellosdl/vendored/SDL/src/hidapi/hidapi/hidapi.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/SDL_error_c.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/SDL_internal.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/thread/SDL_systhread.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/thread/SDL_thread_c.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/thread/pthread/SDL_systhread_c.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/hidapi/hidapi/hidapi.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/hidapi/libusb/hid.c \
+  /home/david/dev/hellosdl/vendored/SDL/src/hidapi/libusb/hidapi_libusb.h \
+  /home/david/dev/hellosdl/vendored/SDL/src/hidapi/libusb/hidapi_thread_sdl.h \
   /home/david/dev/hellosdl/vendored/SDL/src/hidapi/hidapi/hidapi.h \
   /home/david/dev/hellosdl/vendored/SDL/src/hidapi/linux/hid.c \
   /usr/include/asm-generic/bitsperlong.h \
@@ -4307,6 +4318,7 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/hidapi/SDL_hidapi.c.o: vendored/SDL/
   /usr/include/fcntl.h \
   /usr/include/features.h \
   /usr/include/libudev.h \
+  /usr/include/libusb-1.0/libusb.h \
   /usr/include/limits.h \
   /usr/include/linux/close_range.h \
   /usr/include/linux/errno.h \
@@ -4324,10 +4336,13 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/hidapi/SDL_hidapi.c.o: vendored/SDL/
   /usr/include/linux/version.h \
   /usr/include/locale.h \
   /usr/include/poll.h \
+  /usr/include/pthread.h \
+  /usr/include/sched.h \
   /usr/include/stdc-predef.h \
   /usr/include/stdio.h \
   /usr/include/stdlib.h \
   /usr/include/string.h \
+  /usr/include/time.h \
   /usr/include/unistd.h \
   /usr/include/wchar.h \
   /usr/include/x86_64-linux-gnu/asm/bitsperlong.h \
@@ -4338,6 +4353,8 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/hidapi/SDL_hidapi.c.o: vendored/SDL/
   /usr/include/x86_64-linux-gnu/asm/posix_types_64.h \
   /usr/include/x86_64-linux-gnu/asm/types.h \
   /usr/include/x86_64-linux-gnu/bits/confname.h \
+  /usr/include/x86_64-linux-gnu/bits/cpu-set.h \
+  /usr/include/x86_64-linux-gnu/bits/endian.h \
   /usr/include/x86_64-linux-gnu/bits/environments.h \
   /usr/include/x86_64-linux-gnu/bits/errno.h \
   /usr/include/x86_64-linux-gnu/bits/fcntl-linux.h \
@@ -4355,21 +4372,33 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/hidapi/SDL_hidapi.c.o: vendored/SDL/
   /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
   /usr/include/x86_64-linux-gnu/bits/posix_opt.h \
   /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/pthreadtypes.h \
+  /usr/include/x86_64-linux-gnu/bits/sched.h \
+  /usr/include/x86_64-linux-gnu/bits/setjmp.h \
   /usr/include/x86_64-linux-gnu/bits/stat.h \
   /usr/include/x86_64-linux-gnu/bits/statx-generic.h \
   /usr/include/x86_64-linux-gnu/bits/statx.h \
   /usr/include/x86_64-linux-gnu/bits/struct_stat.h \
   /usr/include/x86_64-linux-gnu/bits/sysmacros.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
   /usr/include/x86_64-linux-gnu/bits/types.h \
   /usr/include/x86_64-linux-gnu/bits/types/__sigset_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/error_t.h \
   /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct___jmp_buf_tag.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_iovec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_sched_param.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_statx_timestamp.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
   /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
   /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
   /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
   /usr/include/x86_64-linux-gnu/bits/unistd_ext.h \
   /usr/include/x86_64-linux-gnu/bits/utsname.h \
@@ -4699,7 +4728,39 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gamecube.
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_gamecube.c \
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_rumble.h \
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapijoystick_c.h \
-  /usr/include/stdc-predef.h
+  /usr/include/features.h \
+  /usr/include/libusb-1.0/libusb.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_gamesir.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
   /home/david/dev/hellosdl/vendored/SDL/include/SDL3/SDL_begin_code.h \
@@ -5239,7 +5300,39 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_switch2.c
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_rumble.h \
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_switch2.c \
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapijoystick_c.h \
-  /usr/include/stdc-predef.h
+  /usr/include/features.h \
+  /usr/include/libusb-1.0/libusb.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_wii.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
   /home/david/dev/hellosdl/vendored/SDL/include/SDL3/SDL_begin_code.h \
@@ -5306,7 +5399,39 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xbox360.c
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_xbox360.c \
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_xbox360.h \
   /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapijoystick_c.h \
-  /usr/include/stdc-predef.h
+  /usr/include/features.h \
+  /usr/include/libusb-1.0/libusb.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/joystick/hidapi/SDL_hidapi_xbox360w.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
   /home/david/dev/hellosdl/vendored/SDL/include/SDL3/SDL_begin_code.h \
@@ -5641,7 +5766,39 @@ vendored/SDL/CMakeFiles/SDL3-shared.dir/src/misc/SDL_libusb.c.o: vendored/SDL/CM
   /home/david/dev/hellosdl/vendored/SDL/src/SDL_internal.h \
   /home/david/dev/hellosdl/vendored/SDL/src/misc/SDL_libusb.c \
   /home/david/dev/hellosdl/vendored/SDL/src/misc/SDL_libusb.h \
-  /usr/include/stdc-predef.h
+  /usr/include/features.h \
+  /usr/include/libusb-1.0/libusb.h \
+  /usr/include/limits.h \
+  /usr/include/linux/limits.h \
+  /usr/include/stdc-predef.h \
+  /usr/include/time.h \
+  /usr/include/x86_64-linux-gnu/bits/libc-header-start.h \
+  /usr/include/x86_64-linux-gnu/bits/local_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix1_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/posix2_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/pthread_stack_min-dynamic.h \
+  /usr/include/x86_64-linux-gnu/bits/time.h \
+  /usr/include/x86_64-linux-gnu/bits/timex.h \
+  /usr/include/x86_64-linux-gnu/bits/types.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clock_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/clockid_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/locale_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_itimerspec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timespec.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_timeval.h \
+  /usr/include/x86_64-linux-gnu/bits/types/struct_tm.h \
+  /usr/include/x86_64-linux-gnu/bits/types/time_t.h \
+  /usr/include/x86_64-linux-gnu/bits/types/timer_t.h \
+  /usr/include/x86_64-linux-gnu/bits/uio_lim.h \
+  /usr/include/x86_64-linux-gnu/bits/wordsize.h \
+  /usr/include/x86_64-linux-gnu/bits/xopen_lim.h \
+  /usr/include/x86_64-linux-gnu/sys/select.h \
+  /usr/include/x86_64-linux-gnu/sys/time.h \
+  /usr/include/x86_64-linux-gnu/sys/types.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/limits.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stddef.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/stdint.h \
+  /usr/lib/gcc/x86_64-linux-gnu/13/include/syslimits.h
 
 vendored/SDL/CMakeFiles/SDL3-shared.dir/src/misc/SDL_url.c.o: vendored/SDL/CMakeFiles/SDL3-shared.dir/cmake_pch.h \
   /home/david/dev/hellosdl/vendored/SDL/src/SDL_internal.h \
@@ -14540,8 +14697,6 @@ vendored/SDL/wayland-generated-protocols/fractional-scale-v1-client-protocol.h:
 
 /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_gamecube.c:
 
-/home/david/dev/hellosdl/vendored/SDL/src/misc/SDL_libusb.h:
-
 /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_flydigi.c:
 
 /home/david/dev/hellosdl/vendored/SDL/src/joystick/hidapi/SDL_hidapi_combined.c:
@@ -14584,9 +14739,19 @@ vendored/SDL/wayland-generated-protocols/wayland-client-protocol.h:
 
 /usr/include/linux/hid.h:
 
+/usr/include/libusb-1.0/libusb.h:
+
+/home/david/dev/hellosdl/vendored/SDL/src/hidapi/libusb/hidapi_libusb.h:
+
+/home/david/dev/hellosdl/vendored/SDL/src/hidapi/libusb/hid.c:
+
 /home/david/dev/hellosdl/vendored/SDL/src/hidapi/hidapi/hidapi.h:
 
+/home/david/dev/hellosdl/vendored/SDL/src/hidapi/SDL_hidapi_libusb.h:
+
 /home/david/dev/hellosdl/vendored/SDL/src/hidapi/SDL_hidapi_c.h:
+
+/home/david/dev/hellosdl/vendored/SDL/src/misc/SDL_libusb.h:
 
 /home/david/dev/hellosdl/vendored/SDL/src/joystick/linux/SDL_sysjoystick_c.h:
 
@@ -15637,6 +15802,8 @@ vendored/SDL/wayland-generated-protocols/primary-selection-unstable-v1-client-pr
 /usr/include/x86_64-linux-gnu/bits/xopen_lim.h:
 
 /usr/include/glib-2.0/gio/gvolumemonitor.h:
+
+/home/david/dev/hellosdl/vendored/SDL/src/hidapi/libusb/hidapi_thread_sdl.h:
 
 /usr/lib/gcc/x86_64-linux-gnu/13/include/pconfigintrin.h:
 

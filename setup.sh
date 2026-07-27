@@ -1,4 +1,3 @@
-#!/bin/bash------------------------------------------------
 #
 # Simple setup script to get a maching up to snuff quickly
 #
