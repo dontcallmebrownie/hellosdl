@@ -7,6 +7,8 @@ set(CMAKE_DEPENDS_GENERATOR "Unix Makefiles")
 # The top level Makefile was generated from the following files:
 set(CMAKE_MAKEFILE_DEPENDS
   "CMakeCache.txt"
+  "/home/david/dev/hellosdl/.git/HEAD"
+  "/home/david/dev/hellosdl/.git/refs/heads/master"
   "/home/david/dev/hellosdl/CMakeLists.txt"
   "CMakeFiles/3.28.3/CMakeCCompiler.cmake"
   "CMakeFiles/3.28.3/CMakeCXXCompiler.cmake"
@@ -15,8 +17,6 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/cmake.verify_globs"
   "vendored/SDL/CMakeFiles/SDL_build_config.h.intermediate"
   "vendored/SDL/CMakeFiles/git-data/grabRef.cmake"
-  "/home/david/dev/hellosdl/vendored/SDL/.git/HEAD"
-  "/home/david/dev/hellosdl/vendored/SDL/.git/refs/heads/main"
   "/home/david/dev/hellosdl/vendored/SDL/CMakeLists.txt"
   "/home/david/dev/hellosdl/vendored/SDL/cmake/3rdparty.cmake"
   "/home/david/dev/hellosdl/vendored/SDL/cmake/FindLibUSB.cmake"
