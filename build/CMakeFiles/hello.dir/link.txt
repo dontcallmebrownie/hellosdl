@@ -1,1 +1,0 @@
-/usr/bin/cc CMakeFiles/hello.dir/hello.c.o -o hello  -Wl,-rpath,/home/david/dev/hellosdl/build libSDL3.so.0.5.0 
