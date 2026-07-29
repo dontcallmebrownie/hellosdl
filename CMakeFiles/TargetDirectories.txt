@@ -1,0 +1,8 @@
+/home/david/dev/hellosdl/CMakeFiles/hello.dir
+/home/david/dev/hellosdl/CMakeFiles/edit_cache.dir
+/home/david/dev/hellosdl/CMakeFiles/rebuild_cache.dir
+/home/david/dev/hellosdl/vendored/SDL/CMakeFiles/SDL3-shared.dir
+/home/david/dev/hellosdl/vendored/SDL/CMakeFiles/SDL3_test.dir
+/home/david/dev/hellosdl/vendored/SDL/CMakeFiles/SDL_uclibc.dir
+/home/david/dev/hellosdl/vendored/SDL/CMakeFiles/edit_cache.dir
+/home/david/dev/hellosdl/vendored/SDL/CMakeFiles/rebuild_cache.dir
